@@ -1,0 +1,19 @@
+server:
+  port: 7001
+#注册中心配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:ok@localhost:7001/eureka/
+    #表示不注册自己信息
+    fetch-registry: false
+    register-with-eureka: false
+#验证
+security:
+  basic:
+    #开启验证
+    enabled: true
+  user:
+    name: root
+    password: ok
+
